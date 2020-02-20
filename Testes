@@ -1,0 +1,15 @@
+ //Token
+     var jsonData = JSON.parse(responseBody);
+    postman.setGlobalVariable("Token",jsonData.access_token)
+ 
+ 
+ //Script .Parse onde é criada a variavel "Cotacao" , obtem um valor na .CalculateResult e guarda esse valor na variavel "Cotaçao"
+     var jsonData = JSON.parse(responseBody);postman.setGlobalVariable("Cotacao",jsonData.CalculateResultAuto.BrokerProposalNumber);
+     var jsonData = JSON.parse(responseBody);postman.setGlobalVariable("Premio",jsonData.CalculateResultAuto.NetTotalPremium);
+ //apresenta valor variavel    
+     var Cotacao = pm.globals.get("Cotacao") 
+     tests["Numero_Cotacao = " + Cotacao] = true; var Premio = pm.globals.get("Premio") 
+     tests["Valor_premio = " + Premio] = true;   
+     
+  
+ 
