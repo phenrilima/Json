@@ -1,0 +1,313 @@
+{
+    "Usuario": "{{Usuario}}",
+      "CalculateRequestAuto": {
+            "ReferenceDate": "{{Data_referencia}}",
+            "CustomerTrackingName": "{{Nome}}",
+            "AutomaticAdjustmentFactor": "S",
+            "BrokerProposalNumber": "4524856",
+            "SalesPartnerCode": "25",
+            "StartDate": "{{inicio_vigencia}}",
+            "EndDate": "{{fim_vigencia}}",
+            "CommissionPct": "{{Comissao}}",
+            "PolicyHolderIsEmployee": "F",
+            "CommercialProductCode": "{{Produto}}",
+            "PublicIdNumber": "",
+            "Broker": {
+                "BrokerCode": "{{Codigo_coretor}}",
+                "BrokerBranchCode": "{{Estab_corretor}}",
+                "InternalBranchCode": "{{Filial}}"
+            },
+            "CommissionParticipation": {
+                "BrokerCommission": [
+                    {
+                        "BrokerCode": "{{Codigo_coretor}}",
+                        "BrokerBranchCode": "{{Estab_corretor}}",
+                        "ParticipationPct": "{{Particp_comissao}}"
+                    }
+                ]
+            },
+            "Vehicles": {
+                "Vehicle": [
+                    {
+                        "ModelYear": "{{Modelo_veiculo}}",
+                        "ManufactureYear": "{{Ano_veiculo}}",
+                        "Is0KM": "F",
+                        "dealerExitDateTime": "",
+                        "IsDealerOwnerVehicle": "",
+                        "ValueEstimationType": "R",
+                        "Plate": "{{Placa}}",
+                        "Chassis": "{{Chassi}}",
+                        "SurchargeFactor": "0.00",
+                        "HasLoJack": "F",
+                        "LoJackCode": "108",
+                        "AdjustmentFactor": "1.00",
+                        "ZipCode": "04571",
+                        "CategoryCode": "17",
+                        "FIPECode": "{{Fipe}}",
+                        "Fuel": "1",
+                        "IsRgnDiscSupported": "F",
+                        "VehicleOwnerIsPolicyHolder": "T",
+                        "UsageCode": "1",
+                        "AdaptationCodes": {
+                            "AdaptationCode": []
+                        },
+                        "VehicleOwnerData": {
+                            "VehicleOwnerName": "{{Nome}}",
+                            "PublicIdNumber": "{{CPF}}",
+                            "RelationType": "1"
+                        },
+                        "PotentialDrivers": {
+                        "PotentialDriver": [
+                            {
+                                "IsPolicyHolder": "T",
+                                "BirthDate": "1989-02-11",
+                                "PublicIdNumber": "{{CPF}}",
+                                "Gender": "F",
+                                "Name": "{{Nome}}",
+                                "IsDriver": "T",
+                                "DaysPerWeek": "7",
+                                "IsReferenceDriver": "F",
+                                "MaritalStatus": "M",
+                                "DriverType": "1",
+                                "IsIndividual": "T",
+                                "RelationalTypeCode": ""
+                            },
+                            {
+                                "IsPolicyHolder": "T",
+                                "BirthDate": "1989-02-11",
+                                  "PublicIdNumber": "{{CPF}}",
+                                "Gender": "F",
+                               "Name": "{{Nome}}",
+                                "IsDriver": "T",
+                                "DaysPerWeek": "7",
+                                "IsReferenceDriver": "F",
+                                "MaritalStatus": "M",
+                                "DriverType": "2",
+                                "IsIndividual": "T",
+                                "RelationalTypeCode": "1"
+                            },
+                            {
+                                "IsPolicyHolder": "T",
+                                "BirthDate": "1989-02-11",
+                                 "PublicIdNumber": "{{CPF}}",
+                                "Gender": "F",
+                               "Name": "{{Nome}}",
+                                "IsDriver": "T",
+                                "DaysPerWeek": "7",
+                                "IsReferenceDriver": "F",
+                                "MaritalStatus": "M",
+                                "DriverType": "3",
+                                "IsIndividual": "T",
+                                "RelationalTypeCode": "1"
+                            }
+                        ]
+                    },
+					"ReferenceDriverProfile": {
+						"Question": [
+							{
+								"QuestionNumber": "143",
+								"AnswerChoiceCode": "1324"
+							},
+							{
+								"QuestionNumber": "144",
+								"AnswerChoiceCode": "1330"
+							},
+							{
+								"QuestionNumber": "147",
+								"AnswerChoiceCode": "1351"
+							},
+							{
+								"QuestionNumber": "148",
+								"AnswerChoiceCode": "1353"
+							},
+							{
+								"QuestionNumber": "149",
+								"AnswerChoiceCode": "1357"
+							},
+							{
+								"QuestionNumber": "150",
+								"AnswerChoiceCode": "1361"
+							},
+							{
+								"QuestionNumber": "154",
+								"AnswerChoiceCode": "1373"
+							},
+							{
+								"QuestionNumber": "151",
+								"AnswerChoiceCode": "1365"
+							},
+							{
+								"QuestionNumber": "152",
+								"AnswerChoiceCode": "1367"
+							},
+							{
+								"QuestionNumber": "153",
+								"AnswerChoiceCode": "1372"
+							}
+						]
+					
+					},
+					"VehicleCoverages": {
+						"VehicleCoverage": [
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{Cobertura_Compreensiva}}",
+									"LineItemCode": "{{Verba_Compreensiva}}"
+								},
+								"InsuredAmount": "0",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "{{Fator_Ajuste}}",
+									"Level": "{{Franquia_veiculo}}"
+								}
+							},
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{Assitencia_res}}",
+									"LineItemCode": "{{Verba_Assis_res}}"
+								},
+								"InsuredAmount": "0",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+						
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{Carro_Reserva_Ind}}",
+									"LineItemCode": "C17"
+								},
+								"InsuredAmount": "0",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{Carro_Reserva}}",
+									"LineItemCode": "C03"
+								},
+								"InsuredAmount": "0",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{Carro_Reserva_Terc}}",
+									"LineItemCode": "C18"
+								},
+								"InsuredAmount": "0",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+								{
+								"CoverageReference": {
+									"CoverageCode": "{{RCF_DM}}",
+									"LineItemCode": "{{Verba_RCF_DM}}"
+								},
+								"InsuredAmount": "{{Valor_RCF_DM}}",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{RCF_DC}}",
+									"LineItemCode": "{{Verba_RCF_DC}}"
+								},
+								"InsuredAmount": "{{Valor_RCF_DC}}",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{APP_Morte}}",
+									"LineItemCode": "{{Verba_APP_Morte}}"
+								},
+								"InsuredAmount": "{{Valor_APP_Morte}}",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{RCF_DMO}}",
+									"LineItemCode": "{{Verba_RCF_DMO}}"
+								},
+								"InsuredAmount": "{{Valor_RCF_DMO}}",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{APP_DMH}}",
+									"LineItemCode": "{{Verba_APP_DMH}}"
+								},
+								"InsuredAmount": "{{Valor_APP_DMH}}",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+							
+							{
+								"CoverageReference": {
+									"CoverageCode": "{{APP_Invalidez}}",
+									"LineItemCode": "{{Verba_APP_Invalidez}}"
+								},
+								"InsuredAmount": "{{Valor_APP_Invalidez}}",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							},
+								{
+								"CoverageReference": {
+									"CoverageCode": "{{Carro_Reserva_Desc}}",
+									"LineItemCode": "C09"
+								},
+								"InsuredAmount": "0",
+								"OptionalPercentage": "0",
+								"Deductible": {
+									"Code": "0",
+									"Level": "0.0"
+								}
+							}
+							
+						]
+					},
+					"RegionalDiscountPct": null,
+					"PromotionalDiscountVlr": null,
+					"Renewal": null,
+					"SequenceNumber": "1"
+				}
+			]
+		},
+		"PromotionalCode": null,
+		"Dealer": null
+	}
+}
